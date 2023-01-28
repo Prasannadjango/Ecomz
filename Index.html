@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External links -->
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/Responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg Navbar_container py-3">
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand text-white fw-bold" href="Index.html">Ecomz</a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-text-right fs-4 text-white"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav text-white">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All brands</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sellers zone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offers</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavDropdown"
+          class="d-flex"
+        >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-search text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="mx-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-person-fill text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-cart-check-fill text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner section -->
+
+    <div class="Banner-container">
+      <div class="ps-3">
+        <h1 class="fw-bold pb-2">Explore the various range of</h1>
+        <h1 class="fw-bold">Products for Anywhere</h1>
+        <button class="btn Banner_btn mt-3 text-center">Buy now</button>
+      </div>
+    </div>
+
+    <!-- About the company the section -->
+
+    <div class="Aboutsection-container my-5 d-flex ps-4">
+      <div class="col-4 d-flex">
+        <div class="Aboutsection-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="currentColor"
+            class="bi bi-truck"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="d-flex flex-column ps-3 justify-content-center Aboutsection-info"
+        >
+          <h3 class="fw-bold">Fast Delivery</h3>
+          <p class="m-0 fs-6">Get your orders in 48hrs</p>
+        </div>
+      </div>
+      <div class="col-4 d-flex">
+        <div class="Aboutsection-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="currentColor"
+            class="bi bi-credit-card-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+        </div>
+        <div
+          class="d-flex flex-column ps-3 justify-content-center Aboutsection-info"
+        >
+          <h3 class="fw-bold">Safe Payment</h3>
+          <p class="m-0 fs-6">Get your orders in 48hrs</p>
+        </div>
+      </div>
+      <div class="col-4 d-flex">
+        <div class="Aboutsection-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="currentColor"
+            class="bi bi-box-seam"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+            />
+          </svg>
+        </div>
+        <div
+          class="d-flex flex-column ps-3 justify-content-center Aboutsection-info"
+        >
+          <h3 class="fw-bold">Return policy</h3>
+          <p class="m-0 fs-6">Get your orders in 48hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category silder -->
+
+    <div class="Category-container ps-4 mb-5">
+      <h3 class="fw-bold">Purchase by Category</h3>
+      <div class="swiper mySwiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Fashion.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Fashion</h5>
+            </a>
+          </div>
+
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Cosmetics.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Cosmetics</h5>
+            </a>
+          </div>
+
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Groceries.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Groceries</h5>
+            </a>
+          </div>
+
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Mobile.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Mobile phones</h5>
+            </a>
+          </div>
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/shoes.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Shoes</h5>
+            </a>
+          </div>
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Cosmetics.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Cosmetics</h5>
+            </a>
+          </div>
+
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Groceries.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Groceries</h5>
+            </a>
+          </div>
+
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/Mobile.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Mobile phones</h5>
+            </a>
+          </div>
+          <div class="swiper-slide flex-column">
+            <a href="#" class="text-decoration-none">
+              <div class="Category-img">
+                <img src="/Images/shoes.png" />
+              </div>
+              <h5 class="pt-3 text-dark">Shoes</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flash Deal section -->
+    <div class="Flashdeal-container px-4 mb-5 position-relative">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h3 class="fw-bold">Flash Deals for you</h3>
+        </div>
+        <div class="counter-container d-flex">
+          <p class="m-0 pt-3 pe-3">Offers ends in</p>
+          <div class="d-flex">
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+          </div>
+        </div>
+      </div>
+      <div class="Flashslider-section my-5">
+        <div class="swiper FlashdealSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- <div class="offer_tag">40% off</div> -->
+              <div class="Flashdeal_card d-flex p-4 position-relative">
+                <div class="col-6 text-start">
+                  <h6>Summer Sale upto 40% off</h6>
+                  <h5 class="fw-bold">Nike Jordan shoes</h5>
+                  <p class="m-0 fs-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn Banner_btn mt-3 text-center">
+                    Buy now
+                  </button>
+                </div>
+                <div class="col-6">
+                  <img src="/Images/flashdealimage.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- <div class="offer_tag">40% off</div> -->
+              <div class="Flashdeal_card d-flex p-4 position-relative">
+                <div class="col-6 text-start">
+                  <h6>Summer Sale upto 40% off</h6>
+                  <h5 class="fw-bold">Nike Jordan shoes</h5>
+                  <p class="m-0 fs-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn Banner_btn mt-3 text-center">
+                    Buy now
+                  </button>
+                </div>
+                <div class="col-6">
+                  <img src="/Images/headphones.png" />
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        
+        </div>
+        <div class="swiper-pagination mt-5"></div>
+      </div>
+    </div>
+
+
+    <!-- Top Deals section -->
+
+    <div class="Topdeals-section px-4">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h3 class="fw-bold">Top Deals for you</h3>
+        </div>
+       
+      </div>
+      <div class="Flashslider-section my-5">
+        <div class="swiper TopDealsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card Products-card">
+                <img src="/Images/cardmobile.png" class="card-img-top" alt="...">
+                <div class="Product-badge d-flex position-absolute mt-2">
+                   <div class="ms-2">
+                    <p class="m-0">Best plan</p>
+                   </div>
+                   <div class="me-2">
+                   <button class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                   </button>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between"> 
+                      <div>
+                        <h5 class="fw-bold">Nike Jordan Air</h5>
+                      </div>
+                      <div>
+                        <h5 class="fw-bold">$100</h5>
+
+                      </div>
+                  </div>
+                  <div class="d-flex  align-items-center align-content-center">
+                     <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-star-fill Star-icon" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                     </div>
+                     <div class="ps-2">
+                      <h6 class="m-0 pt-1">4</h6>
+                     </div>
+                  </div>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit ipsum, semper non turpis vitae, sollicitudin blandit urna. Fusce bibendum id metus nec dignissim. Ut dolor diam
+                  </p>
+                 <div class="d-flex justify-content-start">
+                  <button class="btn  mt-3 text-center">Buy now</button>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card Products-card">
+                <div class="Product-badge d-flex position-absolute mt-2">
+                  <div class="ms-2">
+                   <p class="m-0">Best plan</p>
+                  </div>
+                  <div class="me-2">
+                  <button class="btn">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                   </svg>
+                  </button>
+                  </div>
+               </div>
+                <img src="/Images/flashdealimage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between"> 
+                      <div>
+                        <h5 class="fw-bold">Nike Jordan Air</h5>
+                      </div>
+                      <div>
+                        <h5 class="fw-bold">$100</h5>
+
+                      </div>
+                  </div>
+                  <div class="d-flex  align-items-center align-content-center">
+                     <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-star-fill Star-icon" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                     </div>
+                     <div class="ps-2">
+                      <h6 class="m-0 pt-1">4</h6>
+                     </div>
+                  </div>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit ipsum, semper non turpis vitae, sollicitudin blandit urna. Fusce bibendum id metus nec dignissim. Ut dolor diam
+                  </p>
+                 <div class="d-flex justify-content-start">
+                  <button class="btn  mt-3 text-center">Buy now</button>
+                 </div>
+                </div>
+              </div>
+            </div>
+
+          
+          
+          </div>
+        
+        </div>
+        <div class="swiper-pagination mt-5"></div>
+      </div>
+    </div>
+
+    <!-- External js Links -->
+
+    <script src="Scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
