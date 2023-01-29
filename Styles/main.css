@@ -207,3 +207,39 @@
   #myBtn:hover {
     background-color: #555;
   }
+  .Loginpage_container>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+  }
+  .Loginform{
+    border-radius: 15px 0 15px 0 !important;
+  }
+  .Loginpage_container>div>div:nth-child(1)>img{
+   height: 500px;
+    width: 100%;
+    border-radius: inherit;
+  }
+  .Submit-formbtn{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 19px;
+    width: fit-content;
+    
+  }
+  .Secondary-btn{
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 19px;
+    width: fit-content;
+  }
+  .forgotpassword-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
