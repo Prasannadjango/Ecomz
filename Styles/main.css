@@ -19,6 +19,7 @@
     --primary-color:#5956E9;
 }
 .Navbar_container{
+  
     color: #fff !important;
     background-color: var(--primary-color);
 }
@@ -164,3 +165,45 @@
 .swiper-pagination-bullet-active{
     background-color: #5956E9 !important;
 }
+.Hotoffer_card{
+    border-radius: 15px;
+    background-color: #5755A6;
+}
+.Hotoffer_card2{
+    border-radius: 15px;
+    background-color: #DD8C93;
+}
+.Hotoffer_card>div,
+.Hotoffer_card2>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Hotoffer-btn{
+    background-color:black !important;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 15px;
+    width: fit-content;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+     background-color: #5755A6;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
