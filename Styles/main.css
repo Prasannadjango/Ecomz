@@ -412,7 +412,8 @@
   font-weight: bold;
   margin-right: 10px;
 }
-.Filter_btns>.dropdown>.btn{
+.Filter_btns>.dropdown>.btn,
+.Offers-sort{
   border: 1px solid #646363;
   padding: 10px 16px;
   border-radius: 50px;
