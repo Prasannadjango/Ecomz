@@ -422,3 +422,22 @@
 
   margin-right: 15px;
 }
+.Shop-logo>div{
+  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border: 1px solid #646363;
+}
+.Camera-container{
+  width: 30px;
+  height: 30px;
+  border-radius: 70px;
+  background-color: #5956E9;
+  position: absolute;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  bottom: 0;
+  right: 0;
+}
