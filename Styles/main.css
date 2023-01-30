@@ -153,6 +153,15 @@
     padding: 7px;
     font-size: 12px;
 }
+.Product-badge1{
+    background-color:#F3F3F3;
+    border-radius: 50px;
+    width: 50px;
+   display: flex;
+   align-items: center;
+    height: 50px;
+
+}
 .Product-badge>div:nth-child(2){
     background-color:#F3F3F3;
     border-radius: 50px;
@@ -242,4 +251,83 @@
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
+  }
+  .Productsimage-container{
+    background-color: #DFDFDF;
+     border-radius: 15px;
+     text-align: center;
+  }
+  .Subimage-container>div>img{
+     height: 150px; 
+      width: 150px;
+
+  }
+  .ProductsDescription-section>div>span{
+      content: '';
+      width: 13px;
+      height: 13px;
+      border-radius: 50px;
+      background-color: #DFDFDF;
+
+      align-items: center;
+  }
+
+  .colors{
+    color: #5956E9;
+  }
+  .Productsrating-container>span{
+    content: '';
+    width: 1px;
+    margin: 0 auto;
+    height: 10px;
+    background-color: #8C8C8C;
+  }
+  .Productsrating-container{
+    width: fit-content;
+  }
+  .Products-sectioncontainer{
+    color: #646363;
+    font-size: 17px;
+  }
+  .Productsoffers-badge{
+ height: fit-content;
+  }
+  .Products-Counter{
+    background-color: #EFEFFA;
+    border-radius: 40px;
+  }
+
+  .Productprice-container>div:nth-child(3)>button{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 21px;
+  }
+  .Productprice-container>div:nth-child(3)>button:nth-child(2){
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 21px;
+    border: 2px solid var(--primary-color);
+  }
+  ul li::marker {
+  font-size: 22px;
+  color:var(--primary-color);
+}
+  .Aboutproducts-list{
+    color: #646363;
+    font-size: 17px;
+  }
+  .Aboutproduct-container>div:nth-child(2)>div{
+    background-color:#DFDFDF;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .Aboutproduct-container>div:nth-child(2)>div>img{
+    width: 500px;
+    height: 500px;
   }

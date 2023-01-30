@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/Responsive.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg Navbar_container py-3">
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand text-white fw-bold" href="Index.html">Ecomz</a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-text-right fs-4 text-white"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav text-white">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All brands</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sellers zone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offers</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavDropdown"
+          class="d-flex"
+        >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-search text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </a>
+          <a href="Login.html" class="mx-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-person-fill text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-cart-check-fill text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="Productspage-container m-3">
+      <div class="d-flex">
+        <div class="col-6">
+          <div class="Productsimage-container w-100 position-relative">
+            <div class="d-flex justify-content-end m-3">
+              <div class="Product-badge1 position-absolute mt-2">
+                <div class="me-2">
+                  <button class="btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      fill="currentColor"
+                      class="bi bi-heart"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img src="Images/Productpage.png" />
+          </div>
+          <div class="Subimage-container d-flex mt-3 w-100">
+            <div class="col-3">
+              <img src="Images/Subimages.png" />
+            </div>
+            <div class="col-3">
+              <img src="Images/Subimages.png" />
+            </div>
+            <div class="col-3">
+              <img src="Images/Subimages.png" />
+            </div>
+            <div class="col-3">
+              <img src="Images/Subimages.png" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 px-5 py-3">
+          <div class="ProductsDescription-section">
+            <h2 class="fw-bold m-0">JBl Beats Z01</h2>
+            <div class="d-flex align-items-center py-3">
+              <span></span>
+              <p class="m-0 ps-2" style="color: #818181">Electronics</p>
+            </div>
+          </div>
+          <div class="Productsrating-container d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-star-fill colors"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <p class="m-0 ps-2">4.5</p>
+
+            <span class="mx-3"></span>
+
+            <p class="m-0">100 reviews</p>
+          </div>
+          <div class="py-3">
+            <p class="Products-sectioncontainer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              vitae sodales lorem. Mauris ac rutrum elit. Sed ac eros ac arcu
+              eleifend varius vitae commodo tellus. Aliquam eget nisl id libero
+              ultrices posuere, Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nullam vitae sodales lorem. Mauris ac rutrum
+              elit. Sed ac eros ac arcu eleifend varius vitae commodo tellus.
+              Aliquam eget nisl id libero ultrices posuere.
+            </p>
+            <a href="#" class="text-dark fw-bold"> Visit Store</a>
+          </div>
+          <hr />
+          <div class="Productprice-container pt-2">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <h1 class="fw-bold m-0">$100</h1>
+                <span class="badge bg-dark Productsoffers-badge p-2 ms-2"
+                  >20% off</span
+                >
+              </div>
+
+              <div class="row align-items-center justify-content-end">
+                <div class="col-5 Products-Counter text-dark">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button
+                        type="button"
+                        class="btn btn-default btn-number"
+                        disabled="disabled"
+                        data-type="minus"
+                        data-field="quant[1]"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-dash"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+                          />
+                        </svg>
+                      </button>
+                    </span>
+                    <input
+                      type="text"
+                      name="quant[1]"
+                      class="form-control input-number bg-transparent border-0"
+                      value="1"
+                      min="1"
+                      max="10"
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        type="button"
+                        class="btn btn-default btn-number"
+                        data-type="plus"
+                        data-field="quant[1]"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-plus-lg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                          />
+                        </svg>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex py-3 fw-bold">
+              <p class="m-0">Buy now only</p>
+              <p class="m-0 colors ps-2">5 pcs left</p>
+            </div>
+            <div class="d-flex mt-2">
+              <button class="btn me-3">Buy Now</button>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex my-5 Aboutproduct-container">
+        <div class="col-6">
+          <h2 class="fw-bold">About this product</h2>
+          <ul class="py-3 ps-3 Aboutproducts-list">
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum dapibus augue magna, ut accumsan nisl molestie a.
+              Vestibulum tempor sem vitae sapien lacinia finibus.
+            </li>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum dapibus augue magna, ut accumsan nisl molestie a.
+                Vestibulum tempor sem vitae sapien lacinia finibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum dapibus augue magna, ut accumsan nisl molestie a.
+                Vestibulum tempor sem vitae sapien lacinia finibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum dapibus augue magna, ut accumsan nisl molestie a.
+                Vestibulum tempor sem vitae sapien lacinia finibus.
+              </li>
+          </ul>
+        </div>
+        <div class="col-6">
+           <div class="ms-5">
+            <img src="/Images/Aboutproductimage.png"/>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="Scripts/main.js"></script>
+  </body>
+</html>
