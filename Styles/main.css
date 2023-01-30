@@ -352,3 +352,28 @@
     color: #fff;
     background-color: var(--primary-color);
 }
+.Search-btn{
+
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.Sellerzone-heading>div:nth-child(1)::after{
+  background-color: #5956E9;
+  content: '';
+  width: 100px;
+  height: 3px;
+  position: absolute;
+}
+.Seller-section{
+  background-color: #F2F1FC;
+  
+}
+.Seller-card{
+ background-color: #fff;
+  border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Seller-card>div>img{
+  width: 85px;
+  height: 85px;
+}

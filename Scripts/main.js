@@ -34,6 +34,16 @@ var swiper = new Swiper(".TopDealsSwiper", {
     
 });
 
+var swiper = new Swiper(".Sellerslider", {
+     pagination: {
+        el: ".swiper-pagination1",
+      },
+    // slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    
+});
+
 
 
 
