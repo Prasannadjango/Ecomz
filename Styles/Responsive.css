@@ -2,4 +2,28 @@
     .Navbar_container>div{
         justify-content: inherit;
     }
+    .Banner-container{
+        background-image: none;
+        height: fit-content;
+        padding: 50px 10px;
+    }
+    .Aboutsection-container,
+    .Flashdeal-container>div:nth-child(1){
+        flex-direction: column;
+    }
+    .Aboutsection-container>div:nth-child(2){
+        margin: 30px 0;
+    }
+    .Aboutsection-img{
+        width: 90px;
+        height: 90px;
+    }
+    .counter-container{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .Flashdeal_card{
+        flex-direction: column-reverse;
+    }
+ 
 }

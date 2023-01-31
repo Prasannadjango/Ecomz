@@ -1,8 +1,30 @@
+
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 7,
     spaceBetween: 30,
     loop: true,
-});
+
+
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+      425: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
 
 var swiper = new Swiper(".FlashdealSwiper", {
     pagination: {
@@ -12,7 +34,26 @@ var swiper = new Swiper(".FlashdealSwiper", {
     spaceBetween: 30,
     loop: true,
     
-});
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+      425: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
 
 
 var swiper = new Swiper(".HotDealsSwiper", {
