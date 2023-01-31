@@ -64,8 +64,25 @@ var swiper = new Swiper(".HotDealsSwiper", {
     // pagination: {
     //     el: ".swiper-pagination",
     //   },
-    
-});
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+      425: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
 
 var swiper = new Swiper(".TopDealsSwiper", {
     

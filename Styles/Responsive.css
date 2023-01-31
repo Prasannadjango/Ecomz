@@ -22,8 +22,13 @@
         justify-content: center;
         margin-top: 20px;
     }
-    .Flashdeal_card{
+    .Flashdeal_card,
+    .Hotoffer_card,
+    .Hotoffer_card2{
         flex-direction: column-reverse;
     }
- 
+    .Hotoffer_card>div:nth-child(1),
+    .Hotoffer_card2>div:nth-child(1){
+        padding-top: 35px;
+    }
 }
