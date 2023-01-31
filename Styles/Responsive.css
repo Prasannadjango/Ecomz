@@ -10,7 +10,8 @@
     .Aboutsection-container,
     .Productspage-container>div:nth-child(1),
     .Flashdeal-container>div:nth-child(1),
-    .Reviews-container{
+    .Reviews-container, .Sellerzone-heading,
+    .Seller-section>div{
         flex-direction: column;
     }
     .Aboutsection-container>div:nth-child(2){
@@ -46,5 +47,6 @@
         height: fit-content;
         border-radius: inherit;
     }
+   
   
 }
