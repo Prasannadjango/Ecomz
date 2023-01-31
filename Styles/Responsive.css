@@ -8,7 +8,9 @@
         padding: 50px 10px;
     }
     .Aboutsection-container,
-    .Flashdeal-container>div:nth-child(1){
+    .Productspage-container>div:nth-child(1),
+    .Flashdeal-container>div:nth-child(1),
+    .Reviews-container{
         flex-direction: column;
     }
     .Aboutsection-container>div:nth-child(2){
@@ -24,11 +26,25 @@
     }
     .Flashdeal_card,
     .Hotoffer_card,
-    .Hotoffer_card2{
+    .Hotoffer_card2,
+    .Aboutproduct-container{
         flex-direction: column-reverse;
     }
     .Hotoffer_card>div:nth-child(1),
     .Hotoffer_card2>div:nth-child(1){
         padding-top: 35px;
     }
+    .Productsimage-container>img{
+        width: 100%;
+        border-radius: inherit;
+    }
+    .Subimage-container{
+        overflow-x: scroll;
+    }
+    .Aboutproduct-container>div:nth-child(2)>div>img{
+        width: 100%;
+        height: fit-content;
+        border-radius: inherit;
+    }
+  
 }
