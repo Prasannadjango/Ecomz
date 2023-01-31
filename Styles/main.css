@@ -465,3 +465,15 @@
 .btns{
   background-color: var(--primary-color);
 }
+
+.Delete-btn{
+  position: absolute;
+  top:-25px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.Delete-btn>button{
+  border-radius: inherit;
+}
