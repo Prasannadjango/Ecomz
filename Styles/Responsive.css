@@ -59,4 +59,19 @@
   .navbar-toggler{
     padding: 0;
   }
-}
+  .Loginform>div:nth-child(1){
+    display: none;
+    visibility: hidden;
+  }
+  .Loginform{
+    border-radius: 15px !important;
+  }
+  .Loginform>div:nth-child(2)>form>div{
+    flex-direction: column;
+  }
+  .Submit-formbtn,
+  .Secondary-btn{
+    width: 100%;
+    
+  } 
+  }
