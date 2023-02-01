@@ -139,7 +139,7 @@
                 <img src="/Images/loginapage.png"/>
             </div>
             <div class="col-6">
-                <form class="p-5">
+                <form class="p-5" >
                     <h1 class="fw-bold">Login as User</h1>
                     <div class="col-12 mt-4">
                         <label class="fw-bold pb-3 fs-6">E-mail id:</label>
@@ -154,7 +154,7 @@
                     </div>
 
                     <div class="d-flex mt-4">
-                       <button class="Submit-formbtn btn me-3"> Submit</button>
+                     <a href='Dashboard.html' class="Submit-formbtn btn me-3" type="submit" onclick="Dashboardpage()"> Submit</a>
                        <a href="Register.html" class="Secondary-btn btn">
                         Create one</a>
                     </div>
@@ -179,5 +179,12 @@
        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
        crossorigin="anonymous"
      ></script>
+
+     <script>
+       function Dashboardpage(){
+        var a ='Dashboard.html';
+      Window.location.href = a ;
+  }
+     </script>
   </body>
 </html>
