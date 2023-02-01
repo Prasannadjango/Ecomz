@@ -11,7 +11,12 @@
     .Productspage-container>div:nth-child(1),
     .Flashdeal-container>div:nth-child(1),
     .Reviews-container, .Sellerzone-heading,
-    .Seller-section>div
+    .Seller-section>div{
+        flex-direction: column;
+    }
+    .Aboutsection-container>div:nth-child(2){
+        margin: 30px 0;
+    }
     .Aboutsection-img{
         width: 90px;
         height: 90px;
@@ -43,5 +48,15 @@
         border-radius: inherit;
     }
    
-  
+  .Sellerslider>.swiper-wrapper>.swiper-slide{
+    height: 250px;
+
+  }
+  .Sellerslider>.swiper-wrapper>.swiper-slide>img{
+  object-fit: cover;
+    
+  }
+  .navbar-toggler{
+    padding: 0;
+  }
 }

@@ -20,8 +20,8 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
+        slidesPerView: 6,
+        spaceBetween: 30,
       },
     },
   });
@@ -49,8 +49,8 @@ var swiper = new Swiper(".FlashdealSwiper", {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
+        slidesPerView: 2,
+        spaceBetween: 30,
       },
     },
   });
@@ -78,8 +78,8 @@ var swiper = new Swiper(".HotDealsSwiper", {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
     },
   });
@@ -103,8 +103,8 @@ var swiper = new Swiper(".TopDealsSwiper", {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
     },
   });
